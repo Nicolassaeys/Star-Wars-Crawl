@@ -1,0 +1,14 @@
+body {font-family: 'Star Jedi', arial;
+    background-image: url(https://wallpaperplay.com/walls/full/e/0/a/54074.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.text {color: rgb(105, 202, 247);
+       text-align: center;
+       grid-column: 2 / 3;
+}
+
