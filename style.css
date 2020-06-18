@@ -1,14 +1,49 @@
-body {font-family: 'Star Jedi', arial;
+body {height: 100%;
+    width: 100%;
+    overflow: hidden;
     background-image: url(https://wallpaperplay.com/walls/full/e/0/a/54074.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    font-family: 'Star Jedi', arial;
 }
 
-.text {color: rgb(105, 202, 247);
-       text-align: center;
-       grid-column: 2 / 3;
+.starwars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: aquamarine;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150px;
+    perspective: 500px;
+    text-align: justify;
+    
 }
+
+.defile {
+    position: relative;
+    top: -100px;
+    transform-origin: 50% 100%;
+    animation: defile 60s linear;
+    }
+
+.titre {text-align: center;}
+
+@keyframes defile {
+    0% {top: 0;
+        transform: rotateX(20deg) translateZ(0);}
+    100% {top: -6000px;
+        transform: rotateX(30deg) translateZ(-2500px);}
+
+}
+
+
+
+
+
+
+
+
+
+
 
