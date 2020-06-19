@@ -5,6 +5,22 @@ body {height: 100%;
     font-family: 'Star Jedi', arial;
 }
 
+.logo { display: flex;
+        justify-content: center;    
+        position: relative; 
+        height: 300px;
+        animation: zoomOut 80s ease-in-out;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+}
+
+.becode { display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+
+}
+
 .starwars {
     display: flex;
     justify-content: center;
@@ -32,12 +48,30 @@ body {height: 100%;
 @keyframes defile {
     0% {top: 0;
         transform: rotateX(20deg) translateZ(0);}
+    10% {top: 0;
+        transform: rotateX(20deg) translateZ(0);}
     100% {top: -6000px;
         transform: rotateX(30deg) translateZ(-2500px);}
 
 }
 
+@keyframes zoomOut {
+    0% {width: 300px;
+        height: 300px;
+        transform: translateZ(0)}
+    3% {width: 299px;
+        height: 300px;}
+    10% {opacity: 1;}    
+    20% {width: 0px;
+        height: 0px;
+        opacity: 0;}
+    100% {width: 0px;
+        height: 0px;
+        opacity: 0;}
 
+
+
+}
 
 
 
